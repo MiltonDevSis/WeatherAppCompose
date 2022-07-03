@@ -1,4 +1,4 @@
-package com.mpfcoding.weatherappcompose.ui.theme
+package com.mpfcoding.weatherappcompose.presentation.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
