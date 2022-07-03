@@ -1,5 +1,7 @@
 package com.mpfcoding.weatherappcompose.data.repository
 
+import android.os.Build
+import androidx.annotation.RequiresApi
 import com.mpfcoding.weatherappcompose.data.mappers.toWeatherInfo
 import com.mpfcoding.weatherappcompose.data.remote.WeatherApi
 import com.mpfcoding.weatherappcompose.domain.repository.WeatherRepository
@@ -12,6 +14,7 @@ class WeatherRepositoryImpl @Inject constructor(
     private val api: WeatherApi
 ): WeatherRepository {
 
+    @RequiresApi(Build.VERSION_CODES.O)
     override suspend fun getWeatherData(
         latitude: Double,
         longitude: Double
